@@ -1,0 +1,39 @@
+body{
+    
+    text-align: center;
+}
+.forms{
+    margin: auto;
+    width:60%;
+    background-color: rgb(52, 52, 150);
+}
+form h1{
+    color: blue;
+    text-decoration: underline;
+}
+.box label{
+padding: -40px 0px 0px 0px;
+align-items: self-start;
+width: 70px;
+
+
+}
+.box{
+    float:unset;
+    display: grid;
+    padding: 0px 0px 0px 10px;
+    margin: 50px 0px 0px 10%;
+}
+.box input{
+    all: unset;
+    width: 70%;
+  padding: 12px;
+  margin: 0px 0px 0px 10%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button[type="submit"]{
+margin-left: 32%;
+
+}
