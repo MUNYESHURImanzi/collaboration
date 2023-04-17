@@ -157,4 +157,119 @@ function showSuggestions(list){
     }
     suggBox.innerHTML = listData;
 }
+
+
+
+
+
+
+
+//   // Import the functions you need from the SDKs you need
+//   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+//   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+//   // TODO: Add SDKs for Firebase products that you want to use
+//   // https://firebase.google.com/docs/web/setup#available-libraries
+
+//   // Your web app's Firebase configuration
+//   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+//   const firebaseConfig = {
+//     apiKey: "AIzaSyDXXPHYnVmjivaLY8jx7zXazN4uzRwNKI4",
+//     authDomain: "lostandfind-274ff.firebaseapp.com",
+//     databaseURL: "https://lostandfind-274ff-default-rtdb.firebaseio.com",
+//     projectId: "lostandfind-274ff",
+//     storageBucket: "lostandfind-274ff.appspot.com",
+//     messagingSenderId: "14626368265",
+//     appId: "1:14626368265:web:32175b2af4e7b6018841d8",
+//     measurementId: "G-L0DC0TZDBT"
+//   };
+
+//   // Initialize Firebase
+//   const app = initializeApp(firebaseConfig);
+//   const analytics = getAnalytics(app);
+// import{getdatabase,set,get,update,remove,ref,child}
+// from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+
+// const db = getDatabase()
+// //data base area
+
+// var name1=document.querySelector("#name1")
+// var email1=document.querySelector("#email1")
+// var tel1=document.querySelector("#tel1")
+// var lname1=document.querySelector("#lname1")
+// var lid1=document.querySelector("#lid")
+// var file1=document.querySelector("#file1")
+// var provice1=document.querySelector("#province1")
+// var District1=document.querySelector("#District1")
+// var sector1=document.querySelector("#sector1")
+// var cell1=document.querySelector("#cell1")
+// var textb1=document.querySelector("#textb1")
    
+
+// var lbutton=document.quertSelector("#lbuto")
+
+// function insertdata() {
+//   set(ref(db, "lost details/" + name1.value),{
+//     names:name1.value,
+//     Email:email1.value,
+//     telephone:tel11.value,
+//     lostname:lname1.value,
+//     lostid:lid1.value,
+//     photo:file1.value,
+//     province:province1.value,
+//     District:District1.value,
+//     sector:sector1.value,
+//     cell:cell1.value,
+//     message:textb1.value
+
+//   })
+// .then(()=>{
+//   alert("you have succefull submited your requist")
+// })
+// .catch((error)=>{
+//   alert(error)
+
+// });
+// }
+
+// //foun part
+
+// var name=document.querySelector("#name")
+// var email=document.querySelector("#email")
+// var tel=document.querySelector("#tel")
+// var lname1=document.querySelector("#fname")
+// var fid=document.querySelector("#fid")
+// var file1=document.querySelector("#file1")
+// var provice=document.querySelector("#province")
+// var District=document.querySelector("#District")
+// var sector1=document.querySelector("#sector")
+// var cell=document.querySelector("#cell")
+
+   
+
+// var lbutton=document.quertSelector(".lostb")
+
+// function insertdata() {
+//   set(ref(db, "lost details/" + name1.value),{
+//     names:name1.value,
+//     Email:email1.value,
+//     telephone:tel11.value,
+//     lostname:lname1.value,
+//     lostid:lid1.value,
+//     photo:file1.value,
+//     province:province1.value,
+//     District:District1.value,
+//     sector:sector1.value,
+//     cell:cell1.value,
+//     message:textb1.value
+
+//   })
+// .then(()=>{
+//   alert("you have succefull submited your requist")
+// })
+// .catch((error)=>{
+//   alert(error)
+
+// });
+// }
+
+

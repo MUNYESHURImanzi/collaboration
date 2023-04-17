@@ -1,0 +1,168 @@
+
+*{
+  margin: 0;
+  padding: 0;
+ }
+ .navbar{
+       width: auto;
+      height: 50px;
+      box-shadow: 3px 0px 10px #0c1524;
+      background-color: rgb(23, 23, 164);
+ }
+ span{
+  position: relative;
+  top: 10px;
+  float:right;
+ }
+span a{
+      text-decoration: none;
+      color:#fff ;
+      padding:50px ;
+
+}
+nav img{
+width: 32px;
+height: 32px;
+margin: 10px;
+}
+.lost{
+    text-decoration: underline;
+    text-align: center;
+}
+.cards{
+  
+    display:flex; 
+       align-items: center;
+       justify-content: center;
+       flex-wrap: wrap;
+       margin-top: 50px;
+   }
+   .card1{
+     height: 300px;
+   width: 150px;
+       display: flex;
+    align-items: flex-start;
+   display: inline-flex; 
+       flex-direction: column;
+       padding: 30px;
+       border-radius: 10px;
+       background-color: #efeefd;
+     background-size: cover;
+       margin: 10px 0px 0px 50px;
+       box-shadow:2px 1px 1px 1px #f5f0f0;
+    
+       
+   
+       
+   
+   }
+   
+   
+   .card1 img{
+   
+   box-shadow:1px 0px 1px 1px#777681;
+     width: 150px;
+     height: 150px;
+   }
+   .card1 img:hover{
+    width: 160px;
+    height: 160px;
+    
+  }
+   
+   .card1 h1{
+     padding: 0px;
+     text-decoration: none;
+     font-size: 19px;
+     text-align: center;
+   
+   }
+   .card1 button{
+    box-shadow: 1px 1px 1px 1px #bebeec;
+     margin-top: 10px;
+     border-radius: 15px;
+     background-color: #644bff;
+     width: 50px;
+   }
+   .card1 button:hover{
+    width: 60px;
+    height: 20px;
+  
+  }
+
+   .address{
+     padding-top: 0px;
+     display:flex; 
+   }
+   .address img{
+    background-color: #efeefd;
+     left: 0px;
+     width: 18px;
+     height: 18px;
+     top: 49%;
+   box-shadow: none;
+   margin-top: 0px;
+
+   }
+   .address img::before,
+   .address img::after{
+    content: '';
+    position: absolute;
+	  width: 18px;
+     height: 18px;
+	  left: 0;
+  
+    background-color: white;
+	transition: 0.3s ease;
+	transition-property: top, bottom;
+   }
+ 
+   .address img:hover{
+  
+    left: 0px;
+    width: 34px;
+    height: 34px;
+    top: 50%;
+  
+    
+  }
+   h2{
+   margin: auto;
+   
+     font-size: medium;
+     align-items: center;
+   }
+    b{
+   
+     text-decoration: none;
+     font-style: normal;
+     font-size: 15px;
+   color: rgb(0, 0, 0);
+   font-weight: 100;
+   
+   
+   }
+   h3{
+margin: 3px 0px;
+    letter-spacing: -1px;
+     text-decoration: none;
+      font-style: normal;
+      font-size: 17px;
+   color: rgb(8, 8, 8);
+   
+   
+   
+   }
+   .address{
+     padding-top: 10px;
+     width: 100%;
+position: relative;
+     padding-left: 0px;
+    
+   
+   }
+   i{
+
+      position:absolute;
+    right: 0px;
+   }

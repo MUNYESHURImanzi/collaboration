@@ -6,7 +6,7 @@
    .navbar{
          width: auto;
         height: 50px;
-        box-shadow: 3px 0px 10px #0c1524;
+        box-shadow: 3px 0px 10px #ffffff;
         background-color: rgb(23, 23, 164);
    }
    span{
@@ -137,7 +137,9 @@ align-content: center;
   color: #644bff;
   cursor: pointer;
 }
+.lastest{
 
+}
     
    
 
@@ -336,7 +338,7 @@ form input:focus {
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin-top: 50px;
+	margin-top: 10px;
 }
 .card1{
   height: 300px;
@@ -347,7 +349,7 @@ display: inline-flex;
 	flex-direction: column;
 	padding: 40px;
 	border-radius: 10px;
-	background-color: #d1cfe4;
+	background-color: #efedf8;
   background-size: cover;
 	margin: 10px 0px 0px 50px;
  
@@ -375,9 +377,10 @@ display: inline-flex;
 
 }
 .card1 button{
+  color: #ffffff;
   margin-top: 10px;
   border-radius: 15px;
-  background-color: #644bff;
+  background-color: rgb(23, 23, 164);;
   width: 50px;
 }
 .card1 button:hover{
@@ -391,13 +394,16 @@ display: inline-flex;
 }
 .address img{
   
-  left: 0px;
-  width: 32px;
-  height: 32px;
-  top: 50%;
 
-  
-}
+   left: 0px;
+   width: 18px;
+   height: 18px;
+   top: 49%;
+   
+ box-shadow: none;
+ margin-top: 0px;
+
+ }
 .address img:hover{
   
   left: 0px;
@@ -407,6 +413,19 @@ display: inline-flex;
 
   
 }
+.address img::before,
+   .address img::after{
+    content: '';
+    position: absolute;
+	  width: 18px;
+     height: 18px;
+	  left: 0;
+  
+    background-color: white;
+	transition: 0.3s ease;
+	transition-property: top, bottom;
+   }
+ 
 h2{
 margin: auto;
 
@@ -437,13 +456,66 @@ color: rgb(8, 8, 8);
   padding-top: 10px;
   width: 100%;
   padding: 10px;
+  position: relative;
   padding-left: 0px;
  
 
 }
 i{
-   position: relative;
-   left: 50%;
+  position: absolute;
+  right: 0px;
+  text-align: right;
+
+
+}
+
+#foater{
+  width: 100%;
+  position: relative;
+  
+}
+#foater .contact{
+display: flex;
+justify-content: center;
+
+}
+
+.texts p{
+font-size: 1rem
+
+}
+.box input  {
+	border: 2px solid lightslategray;
+	height: 40px;
+width: auto;
+margin: 5px;
+	font-size: 1rem;
+}
+.box textarea  {
+	border: 2px solid lightslategray;
+	height: 70px;
+  width: auto;
+	padding: 5px;
+	font-size: 1rem;
+  margin: 5px;
+}
+.box input:focus {
+	outline: none;
+	border: 2px solid darkslategray;
+}
+.send{
+  width: 70px;
+  height: 20px
+  
+}
+.box button{
+justify-content: right;
+  right: 0px;
+  margin-bottom: 10px;
+}
+.contactme{
+  background-color: rgb(23, 23, 164);;
+  padding: 10px
 }
 
 
