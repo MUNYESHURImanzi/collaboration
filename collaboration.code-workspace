@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "collaboration",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5504
+	}
+}

@@ -129,7 +129,8 @@ inputBox.onkeyup = (e)=>{
         let allList = suggBox.querySelectorAll("li");
         for (let i = 0; i < allList.length; i++) {
             //adding onclick attribute in all li tag
-            allList[i].setAttribute("onclick", "select(this)");
+            
+           allList[i].setAttribute("onclick", "select(this)");
         }
     }else{
         searchWrapper.classList.remove("active"); //hide autocomplete box
