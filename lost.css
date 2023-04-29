@@ -17,7 +17,7 @@
 span a{
       text-decoration: none;
       color:#fff ;
-      padding:50px ;
+      padding:3vw;
 
 }
 nav img{
@@ -28,9 +28,13 @@ margin: 10px;
 .lost{
     text-decoration: underline;
     text-align: center;
+    margin-top: 30px;
+    color: #0c2550;
+    font-size: medium;
 }
-.cards{
 
+.cards{
+  z-index:0;
   display:flex; 
   align-items: center;
   justify-content: center;
@@ -38,6 +42,7 @@ margin: 10px;
   margin-top: 30px;
   }
   .card1{
+    z-index: 0;
   height: 300px;
   width: 200px;
   display: flex;
@@ -46,10 +51,10 @@ margin: 10px;
   flex-direction: column;
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 2px 3px 4px 1px blue;
+  box-shadow: 3px 4px 4px 4px rgb(221, 221, 231);
   background-color: #ffffff;
   background-size: cover;
-  margin: 10px 0px 0px 50px;
+  margin: 10px 0px 0px 10px;
   
   
   
@@ -57,54 +62,61 @@ margin: 10px;
   
   }
   
-   
-   
-   .card1 img{
-   
-   box-shadow:1px 0px 1px 1px#777681;
-     width: 150px;
-     height: 150px;
-   }
-   .card1 img:hover{
-    width: 160px;
-    height: 160px;
-    
+  
+  .card1 img{
+  width: 200px;
+  height: 200px;
+  transform: scale(1);
   }
-   
-   .card1 h1{
-     padding: 0px;
-     text-decoration: none;
-     font-size: 19px;
-     text-align: center;
-   
-   }
-   .card1 button{
-    box-shadow: 1px 1px 1px 1px #bebeec;
-     margin-top: 10px;
-     border-radius: 15px;
-     background-color: #644bff;
-     width: 50px;
-   }
-   .card1 button:hover{
-    width: 60px;
-    height: 20px;
+  .card1 img:hover{
+  
+    transform: scale(1.2);
+  }
+  .card1 h1{
+  padding: 10px;
+  text-decoration: none;
+  font-size: 19px;
+  text-align: center;
   
   }
-
-   .address{
-     padding-top: 0px;
-     display:flex; 
-   }
-   .address img{
-    background-color: #efeefd;
-     left: 0px;
-     width: 18px;
-     height: 18px;
-     top: 49%;
-   box-shadow: none;
-   margin-top: 0px;
-
-   }
+  .card1 button{
+  color: #ffffff;
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color: rgb(23, 23, 164);;
+  width: 50px;
+  transform: scale(1);
+  }
+  .card1 button:hover{
+    transform: scale(1.6);
+  
+  }
+  .address{
+  padding-top: 10px;
+  display:flex; 
+  }
+  .address img{
+  
+  
+   left: 0px;
+   width: 18px;
+   height: 18px;
+   top: 49%;
+   transform: scale(1);
+  box-shadow: none;
+  margin-top: 0px;
+  
+  }
+  .address img:hover{
+    transform: scale(1.6);
+  
+  
+  }
+  
+  
+  
+  
+  
    .address img::before,
    .address img::after{
     content: '';

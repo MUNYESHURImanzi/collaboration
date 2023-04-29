@@ -4,41 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lost.css">
     <title>Document</title>
 </head>
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+<script>
+ const firebaseConfig = {
+    apiKey: "AIzaSyCHxUhCywam80XlK79HmMZkEv8cb_ZGcWI",
+    authDomain: "lostandfounds-9bed5.firebaseapp.com",
+    databaseURL: "https://lostandfounds-9bed5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "lostandfounds-9bed5",
+    storageBucket: "lostandfounds-9bed5.appspot.com",
+    messagingSenderId: "1099008762470",
+    appId: "1:1099008762470:web:b413545c98827d03b5c3a7",
+    measurementId: "G-RL188JVS3V"
+  };  
+   
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    firebase.analytics()
+</script>
 <body>
    <div class="back">
     <div class="forms">
-      <form >
+      <form onsubmit="sendMesage(event);">
        <h1>Lost Registration</h1>
          <div id="cross"> <img src="./red-cross-png-33.png" alt="cross" ></div>
             <div class="box">
               
-               <input type="text" placeholder="Enter your Name" required id="name1"> 
-               <input type="email" name="" id="email1" placeholder="Enter your surname"required  > 
-               <input type="tel" placeholder="Enter your telephone"required id="tel1">
+            
               <input type="text" placeholder="Enter your lost name" id="lname1">
               
                 <input type="text" placeholder="Enter lost id" id="lid">
-                  <input type="file" placeholder="upload name" name="PHOTO" id="file1">
+                  
                 <input type="text" placeholder="Enter your province" id="province1">
                <input type="text" placeholder="Enter your  District" id="District1">
                <input type="text" placeholder="Enter your sector" id="sector1">
                <input type="text" placeholder="Enter your cell" id="cell1">
-              <textarea spellcheck="false" id="textb1" placeholder="enter your descrition"></textarea>
+              
               <button type="submit" class="lbuto">submit</button>
             </div>
-
-          </div>
-
-
-<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+      </form>
+  </div>
 
 
-<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
 
 <script src="./test.js"></script>
 
 </body>
+<script>
+const sendMesage = (event) => {
+  event.preventDefault()
+  console.log("hhhhhh")
+  let lostName = document.getElementById("lname1").value
+  let lostId = document.getElementById("lid").value
+  let province = document.getElementById("province1").value
+  let district = document.getElementById("District1").value
+  let sector = document.getElementById("sector1").value
+  let cell = document.getElementById("cell1").value
+  firebase.database().ref("messages").push().set({
+      "lostName":lostName,
+      "lostId":lostId,
+      "province":province,
+      "district":district,
+      "sector":sector,
+      "cell":cell
+
+
+
+      
+
+  });
+  let message1 = document.getElementById("name")
+  message1.value = "";
+  return false;
+}
+</script>
 </html>

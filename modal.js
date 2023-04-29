@@ -33,6 +33,7 @@ var allin= document.querySelector(".allin");
 var btn = document.getElementById("submit2");
 btn.addEventListener("click",()=>{
 moda.style.display="block";
+document.body.style.position="fixed";
 
 
 
@@ -41,6 +42,7 @@ moda.style.display="block";
 var span = document.getElementById("cross1");
  span.addEventListener("click",()=>{
    moda.style.display = "none";
+   window.location.reload();
  });
 
  var modal = document.querySelector(".form1");
@@ -52,6 +54,7 @@ var allin= document.querySelector(".allin");
 var btn = document.getElementById("submit");
 btn.addEventListener("click",()=>{
 modal.style.display="block";
+document.body.style.position="fixed";
 
 
 
@@ -59,4 +62,20 @@ modal.style.display="block";
 var span1 = document.getElementById("cross");
  span1.addEventListener("click",()=>{
    modal.style.display = "none";
+   window.location.reload();
  });
+
+ var fbtn=document.querySelector(".fbuto")
+fbtn.addEventListener("click",()=>{
+window.location.href="lost.html"
+  window.alert("you have successfull submited")
+})
+
+var lbtn=document.querySelector(".lbuto")
+lbtn.addEventListener("click",(event)=>{
+window.location.href="found.html"
+if (event){
+  window.alert("you have successfull submited")
+}
+  
+})

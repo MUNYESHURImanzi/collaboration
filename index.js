@@ -9,6 +9,7 @@ cross.addEventListener('click', function(event) {
   event.preventDefault();
 });
 
+
 const show = document.getElementById('submit2');
 const Form = document.querySelector('.forms')
 

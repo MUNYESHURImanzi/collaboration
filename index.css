@@ -4,11 +4,7 @@
     padding: 0;
    scrollbar-color: blue;
   } 
-  marquee {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: marquee 30s linear infinite;
-  }
+
    
    .navbar{
          width: auto;
@@ -24,7 +20,7 @@
 span a{
       text-decoration: none;
       color:#fff ;
-      padding:50px ;
+      padding:4vw;
 
 }
 nav img{
@@ -163,6 +159,8 @@ margin: 5% 0% 0% 5%;
 margin: 5% 0% 0% 60%;
 }
 .home3 button{
+  
+transform: scale(1);
 width: 120px;
  height:30px;
  box-shadow: 0px 2px 3px 1px blue;
@@ -171,13 +169,16 @@ width: 120px;
 }
 .home3 button:hover,.home4 button:hover{
  
+transform: scale(1.3);
    background-color: aqua;
-   width: 130px;
-   height:40px;
+  
   
   }
  
 .home4 button{
+  
+
+transform: scale(1);
 width: 120px;
  height:30px;
  border-radius: 50px;
@@ -206,6 +207,7 @@ background-color: aqua;
   border-radius: 10px;
   position: relative;
   
+transform: scale(1);
   top:0px
   
 
@@ -214,18 +216,32 @@ background-color: aqua;
 .form1 ,.forms {
 
     position: absolute;
-    background: #000000;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    
+    
      top:0;
   left:0;
-position: fixed;
+   position: fixed;
   width:100%;
   height:100%;
-  filter:opacity(0.2);
+ 
   filter:blur(0px);
-  z-index:0;
+  z-index:2;
  overflow-y: hidden;
 
+ 
 
+
+}
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
 }
 
 
@@ -247,6 +263,10 @@ top:20%;
 bottom: 20%;
  width:40%;
  background-color: rgb(0, 0, 156);
+ -webkit-animation-name: form;
+ -webkit-animation-duration: 0.4s;
+ animation-name: form;
+ animation-duration: 0.4s;
 }
 .box input #file-upload-button{
  background-color: aqua;
@@ -416,7 +436,7 @@ form input:focus {
 
 
 .cards{
-
+z-index:0;
 display:flex; 
 align-items: center;
 justify-content: center;
@@ -424,6 +444,7 @@ flex-wrap: wrap;
 margin-top: 30px;
 }
 .card1{
+  z-index: 0;
 height: 300px;
 width: 200px;
 display: flex;
@@ -432,7 +453,7 @@ display: inline-flex;
 flex-direction: column;
 padding: 40px;
 border-radius: 10px;
-box-shadow: 2px 3px 4px 1px blue;
+box-shadow: 3px 4px 4px 4px rgb(221, 221, 231);
 background-color: #ffffff;
 background-size: cover;
 margin: 10px 0px 0px 50px;
@@ -447,11 +468,11 @@ margin: 10px 0px 0px 50px;
 .card1 img{
 width: 200px;
 height: 200px;
+transform: scale(1);
 }
 .card1 img:hover{
-width: 210px;
-height: 210px;
 
+  transform: scale(1.2);
 }
 .card1 h1{
 padding: 10px;
@@ -466,10 +487,10 @@ margin-top: 10px;
 border-radius: 15px;
 background-color: rgb(23, 23, 164);;
 width: 50px;
+transform: scale(1);
 }
 .card1 button:hover{
-width: 60px;
-height: 20px;
+  transform: scale(1.6);
 
 }
 .address{
@@ -483,17 +504,13 @@ display:flex;
  width: 18px;
  height: 18px;
  top: 49%;
- 
+ transform: scale(1);
 box-shadow: none;
 margin-top: 0px;
 
 }
 .address img:hover{
-
-left: 0px;
-width: 34px;
-height: 34px;
-top: 50%;
+  transform: scale(1.6);
 
 
 }
@@ -566,7 +583,14 @@ gap: 40px;
 
 
 }
-
+.texts h1{
+  margin: auto;
+  font-size: medium;
+}
+.texts p{
+  margin-left: 20px;
+  font-size: 10px;
+}
 
 .boxs input{
   align-items: center;
@@ -635,4 +659,8 @@ padding: 10px
   display: inline-block;
   border-bottom: 1px solid #000000;
   box-sizing: border-box;
+}
+.icons{
+  text-align: center;
+ 
 }
